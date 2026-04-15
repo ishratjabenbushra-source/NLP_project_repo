@@ -107,12 +107,15 @@ Step 1: Upload dataset to Google Drive
 
 Step 2: Mount Drive  
 
+```
 from google.colab import drive  
 drive.mount('/content/drive')  
-
+```
 Step 3: Extract Dataset  
 
-!unzip -q "/content/drive/MyDrive/data/Movies_and_TV_data.zip" -d "/content/data"  
+```
+!unzip -q "/content/drive/MyDrive/data/Movies_and_TV_data.zip" -d "/content/data"
+```
 
 Step 3: Run these .py files .ipynb as notebooks
 
