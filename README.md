@@ -17,13 +17,10 @@ We implement:
 ---
 
 ## 🗂️ Project Structure
-
+```
 NLP_project_repo/
-
 ├── data/                      # Dataset
-
 ├── src/                       # Modular source code
-
 │   ├── __init__.py
 │   ├── data_loader_baseline.py
 │   ├── embeddings_baseline.py
@@ -43,7 +40,7 @@ NLP_project_repo/
 ├── baseline_model.py                    # Baseline pipeline
 ├── final_report.py                      # Full LLM2Rec pipeline
 └── README.md
-
+```
 ---
 
 ## 📊 Dataset
