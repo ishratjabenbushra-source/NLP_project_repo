@@ -96,9 +96,9 @@ Tested on Google Colab (A100 GPU) and local Python 3.12.13 environment.
 ```
 ---
 ## ⚙️ Installation
-
+```
 pip install transformers torch numpy pandas tqdm  
-
+```
 ---
 
 ## ▶️ How to Run (Google Colab)
