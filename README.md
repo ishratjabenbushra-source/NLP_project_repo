@@ -48,6 +48,7 @@ NLP_project_repo/
 ## 📊 Dataset
 
 Dataset: Amazon Movies & TV (5-core)
+
 Dataset Source: https://www.kaggle.com/datasets/wajahat1064/amazon-reviews-data-2023/data
 
 Contains:
