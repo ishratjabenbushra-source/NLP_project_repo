@@ -48,6 +48,7 @@ NLP_project_repo/
 ## 📊 Dataset
 
 Dataset: Amazon Movies & TV (5-core)
+Dataset Source: https://www.kaggle.com/datasets/wajahat1064/amazon-reviews-data-2023/data
 
 Contains:
 - User interaction sequences  
@@ -88,6 +89,7 @@ Includes:
 Pipeline:
 
 User Sequences + Item Titles → CSFT → MNTP → Contrastive Learning → LLM2Rec Item Embeddings → SASRec → Prediction
+
 ---
 
 ## ⚙️ Installation
@@ -109,7 +111,7 @@ Step 3: Extract Dataset
 
 !unzip -q "/content/drive/MyDrive/data/Movies_and_TV_data.zip" -d "/content/data"  
 
-Step 3: Run these py files as notebooks
+Step 3: Run these .py files .ipynb as notebooks
 
 - baseline_model.py  
 - final_report.py  
@@ -128,39 +130,6 @@ Step 3: Run these py files as notebooks
 user_history = ["Avengers", "Ironman"]  
 
 Model predicts next likely items.
-
----
-
-## 👩‍💻 Team Contribution
-
-Member 1: Data Processing + CSFT  
-Member 2: MNTP + Contrastive Learning + Embeddings  
-Member 3: SASRec + Evaluation + Inference  
-
----
-
-## ✨ Key Features
-
-- Transformer-based recommendation system  
-- Combines NLP + Recommender Systems  
-- Modular src structure  
-- Baseline + Advanced pipeline  
-- Scalable design  
-
----
-
-## 📄 Report
-
-reports/final_report.ipynb  
-
----
-
-## 🚀 Future Improvements
-
-- Improve scalability  
-- Optimize embedding extraction  
-- Real-time recommendation system  
-- Larger LLM integration  
 
 ---
 
