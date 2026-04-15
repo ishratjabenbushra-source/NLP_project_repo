@@ -90,7 +90,7 @@ Pipeline:
 User Sequences + Item Titles → CSFT → MNTP → Contrastive Learning → LLM2Rec Item Embeddings → SASRec → Prediction
 
 ---
-## Environment Setup
+## ⚙️ Environment Setup
 ```
 Tested on Google Colab (A100 GPU) and local Python 3.12.13 environment.
 ```
