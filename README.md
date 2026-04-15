@@ -19,28 +19,27 @@ We implement:
 ## 🗂️ Project Structure
 
 NLP_project_repo/
-
-├── data/                  # Dataset   
-├── src/                   # Modular source code  
-│   ├── data_loader_baseline.py  
-│   ├── embeddings_baseline.py  
-│   ├── model_baseline.py  
-│   ├── dataset_baseline.py  
-│   ├── train_baseline.py  
-│   ├── evaluate_baseline.py  
-│   ├── inference_baseline.py 
-│   ├── __init__.py 
+├── data/                      # Dataset
+├── src/                       # Modular source code
+│   ├── __init__.py
+│   ├── data_loader_baseline.py
+│   ├── embeddings_baseline.py
+│   ├── model_baseline.py
+│   ├── dataset_baseline.py
+│   ├── train_baseline.py
+│   ├── evaluate_baseline.py
+│   ├── inference_baseline.py
+│   ├── utils_baseline.py
 │   ├── csft.py
-│   ├── data_utils.py 
-│   ├── evaluation.py 
-│   ├── inference.py 
-│   ├── mntp_contrastive.py 
-│   ├── sasrec.py 
-│   └── utils_baseline.py  
-├── Final_project_Report_Group_05.ipynb   # Report notebook  
-├── baseline_model.py   # Baseline pipeline  
-├── final_report.py     # Full LLM2Rec pipeline  
-└── README.md  
+│   ├── data_utils.py
+│   ├── evaluation.py
+│   ├── inference.py
+│   ├── mntp_contrastive.py
+│   └── sasrec.py
+├── Final_project_Report_Group_05.ipynb   # Report notebook
+├── baseline_model.py                    # Baseline pipeline
+├── final_report.py                      # Full LLM2Rec pipeline
+└── README.md
 
 
 ---
