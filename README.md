@@ -1,0 +1,171 @@
+#  LLM2Rec-based Recommendation System
+
+> The implementation of the LLM2Rec model using CSFT IEM and SASRec for sequential recommendation, and a baseline model using BERT embeddings and SASRec for sequential recommendation.
+---
+
+## 📌 Overview
+
+This project focuses on Sequential Recommendation, where the goal is:
+
+Predict the next item a user will interact with based on past behavior.
+
+We implement:
+
+- Baseline Model: BERT + SASRec  
+- Advanced Model: LLM2Rec + SASRec framework  
+
+---
+
+## 🗂️ Project Structure
+
+NLP_project_repo/
+
+├── data/                  # Dataset   
+├── src/                   # Modular source code  
+│   ├── data_loader_baseline.py  
+│   ├── embeddings_baseline.py  
+│   ├── model_baseline.py  
+│   ├── dataset_baseline.py  
+│   ├── train_baseline.py  
+│   ├── evaluate_baseline.py  
+│   ├── inference_baseline.py 
+│   ├── __init__.py 
+│   ├── csft.py
+│   ├── data_utils.py 
+│   ├── evaluation.py 
+│   ├── inference.py 
+│   ├── mntp_contrastive.py 
+│   ├── sasrec.py 
+│   └── utils_baseline.py  
+├── Final_project_Report_Group_05.ipynb   # Report notebook  
+├── baseline_model.py   # Baseline pipeline  
+├── final_report.py     # Full LLM2Rec pipeline  
+└── README.md  
+
+
+---
+
+## 📊 Dataset
+
+Dataset: Amazon Movies & TV (5-core)
+
+Contains:
+- User interaction sequences  
+- Item titles (metadata)  
+- Train / validation / test splits  
+---
+
+## 🧠 Models
+
+### 🔹 1. Baseline Model — BERT + SASRec
+
+File: baseline_model.py
+
+Components:
+
+- BERT → converts titles into embeddings  
+- Adapter layer → projects 768 → 128  
+- SASRec → sequence modeling  
+
+Pipeline:
+
+Item Titles → BERT → Embeddings → Adapter → Transformer → Prediction  
+
+---
+
+### 🔹 2. Advanced Model — LLM2Rec + SASRec
+
+File: final_report.py
+
+Includes:
+
+- CSFT (Collaborative Supervised Fine-Tuning)  
+- MNTP (Masked Next Token Prediction)  
+- Contrastive Learning  
+- Embedding Extraction  
+- SASRec Evaluation  
+
+Pipeline:
+
+User Sequences + Item Titles → CSFT → MNTP → Contrastive Learning → LLM2Rec Item Embeddings → SASRec → Prediction
+---
+
+## ⚙️ Installation
+
+pip install transformers torch numpy pandas tqdm  
+
+---
+
+## ▶️ How to Run (Google Colab)
+
+Step 1: Upload dataset to Google Drive
+
+Step 2: Mount Drive  
+
+from google.colab import drive  
+drive.mount('/content/drive')  
+
+Step 3: Extract Dataset  
+
+!unzip -q "/content/drive/MyDrive/data/Movies_and_TV_data.zip" -d "/content/data"  
+
+Step 3: Run these py files as notebooks
+
+- baseline_model.py  
+- final_report.py  
+
+---
+
+## 📈 Evaluation Metrics
+
+- Recall@K  
+- NDCG@K  
+
+---
+
+## 🎯 Example Inference
+
+user_history = ["Avengers", "Ironman"]  
+
+Model predicts next likely items.
+
+---
+
+## 👩‍💻 Team Contribution
+
+Member 1: Data Processing + CSFT  
+Member 2: MNTP + Contrastive Learning + Embeddings  
+Member 3: SASRec + Evaluation + Inference  
+
+---
+
+## ✨ Key Features
+
+- Transformer-based recommendation system  
+- Combines NLP + Recommender Systems  
+- Modular src structure  
+- Baseline + Advanced pipeline  
+- Scalable design  
+
+---
+
+## 📄 Report
+
+reports/final_report.ipynb  
+
+---
+
+## 🚀 Future Improvements
+
+- Improve scalability  
+- Optimize embedding extraction  
+- Real-time recommendation system  
+- Larger LLM integration  
+
+---
+
+## 👥 Team
+
+- Jakia Nowshin- 501405984  
+- Ishrat Jaben Bushra- 501338510  
+- Surayia Rahman- 501145340 
